@@ -14,13 +14,11 @@ export const apps: App[] = [
     ],
     downloads: {
       windows: {
-        url: '/WinApp/Chrome.exe',
-        version: '1.0.0'
+        url: '/WinApp/Chrome.exe'
       },
       macos: {
         apple: {
-          url: '/MacApp/Chrome.dmg',
-          version: '1.0.0'
+          url: '/MacApp/Chrome.dmg'
         }
       }
     },
@@ -40,8 +38,7 @@ export const apps: App[] = [
     ],
     downloads: {
       windows: {
-        url: '/WinApp/Foxmail.exe',
-        version: '1.0.0'
+        url: '/WinApp/Foxmail.exe'
       }
     },
     version: '1.0.0'
@@ -58,11 +55,10 @@ export const apps: App[] = [
     ],
     downloads: {
       windows: {
-        url: '/WinApp/huorong.exe',
-        version: '1.0.0'
+        url: '/WinApp/huorong.exe'
       }
     },
-    version: '1.0.0'
+    version: '6.0.9.2'
   },
   // TencentMeeting
   {
@@ -76,8 +72,7 @@ export const apps: App[] = [
     ],
     downloads: {
       windows: {
-        url: '/WinApp/TencentMeeting.exe',
-        version: '1.0.0'
+        url: '/WinApp/TencentMeeting.exe'
       }
     },
     version: '1.0.0',
@@ -97,17 +92,15 @@ export const apps: App[] = [
     ],
     downloads: {
       windows: {
-        url: '/WinApp/WeChat.exe',
-        version: '1.0.0'
+        url: '/WinApp/WeChat.exe'
       },
       macos: {
         apple: {
-          url: '/MacApp/WeChat.dmg',
-          version: '1.0.0'
+          url: '/MacApp/WeChat.dmg'
         }
       }
     },
-    version: '1.0.0',
+    version: '4.1.8',
     featured: true,
     badge: '热门'
   },
@@ -125,21 +118,18 @@ export const apps: App[] = [
     ],
     downloads: {
       windows: {
-        url: '/WinApp/WeCom.exe',
-        version: '1.0.0'
+        url: '/WinApp/WeCom.exe'
       },
       macos: {
         apple: {
-          url: '/MacApp/WeCom.dmg',
-          version: '1.0.0'
+          url: '/MacApp/WeCom.dmg'
         },
         intel: {
-          url: '/MacApp/WeCom_Intel.dmg',
-          version: '1.0.0'
+          url: '/MacApp/WeCom_Intel.dmg'
         }
       }
     },
-    version: '1.0.0',
+    version: '5.0.7',
     featured: true,
     badge: '热门'
   },
@@ -157,17 +147,15 @@ export const apps: App[] = [
     ],
     downloads: {
       windows: {
-        url: '/WinApp/WPS.exe',
-        version: '1.0.0'
+        url: '/WinApp/WPS.exe'
       },
       macos: {
         apple: {
-          url: '/MacApp/WPS.zip',
-          version: '1.0.0'
+          url: '/MacApp/WPS.zip'
         }
       }
     },
-    version: '1.0.0',
+    version: '250225',
     featured: true,
     badge: '热门'
   },
@@ -184,8 +172,7 @@ export const apps: App[] = [
     ],
     downloads: {
       windows: {
-        url: '/WinApp/Git.exe',
-        version: '1.0.0'
+        url: '/WinApp/Git.exe'
       }
     },
     version: '1.0.0'
@@ -203,8 +190,7 @@ export const apps: App[] = [
     ],
     downloads: {
       windows: {
-        url: '/WinApp/mysql-community-8.0.45.0.msi',
-        version: '1.0.0'
+        url: '/WinApp/mysql-community-8.0.45.0.msi'
       }
     },
     version: '8.0.45'
@@ -222,8 +208,7 @@ export const apps: App[] = [
     ],
     downloads: {
       windows: {
-        url: '/WinApp/node-v24.14.0.msi',
-        version: '1.0.0'
+        url: '/WinApp/node-v24.14.0.msi'
       }
     },
     version: '24.14.0'
@@ -241,13 +226,29 @@ export const apps: App[] = [
     ],
     downloads: {
       windows: {
-        url: '/WinApp/VSCode-1.109.5.exe',
-        version: '1.0.0'
+        url: '/WinApp/VSCode-1.109.5.exe'
       }
     },
     version: '1.109.5',
     featured: true,
     badge: '热门'
+  },
+  // DBeaver
+  {
+    id: 'dbeaver',
+    name: 'DBeaver',
+    shortDescription: '数据库管理工具',
+    category: 'development',
+    icon: 'heroicons:clipboard-document-check-solid',
+    features: [
+      '数据库管理'
+    ],
+    downloads: {
+      windows: {
+        url: '/WinApp/dbeaver-ce-26.0.0.exe'
+      }
+    },
+    version: '26.0.0'
   },
   // NC
   {
@@ -261,9 +262,13 @@ export const apps: App[] = [
     ],
     downloads: {
       windows: {
-        url: '/WinApp/Uclient.exe',
-        version: '1.0.0'
+        url: '/WinApp/Uclient.exe'
       },
+      macos: {
+        apple: {
+          url: '/MacApp/Uclient.dmg'
+        }
+      }
     },
     version: '1.0.0'
   },
@@ -281,8 +286,7 @@ export const apps: App[] = [
     ],
     downloads: {
       windows: {
-        url: '/WinApp/7z2600-x64.exe',
-        version: '26.0'
+        url: '/WinApp/7z2600-x64.exe'
       },
     },
     version: '26.0'
@@ -299,13 +303,11 @@ export const apps: App[] = [
     ],
     downloads: {
       windows: {
-        url: '/OpenVPN/Win.msi',
-        version: '1.0'
+        url: '/OpenVPN/Win.msi'
       },
       macos: {
         apple: {
-          url: '/OpenVPN/MacOS.dmg',
-          version: '1.0'
+          url: '/OpenVPN/MacOS.dmg'
         }
       }
     },
@@ -324,8 +326,7 @@ export const apps: App[] = [
     downloads: {
       macos: {
         apple: {
-          url: '/MacApp/PD26.1.1.dmg',
-          version: '26.1.1'
+          url: '/MacApp/PD26.1.1.dmg'
         }
       }
     },
@@ -343,8 +344,7 @@ export const apps: App[] = [
     ],
     downloads: {
       windows: {
-        url: '/Nas/ins.exe',
-        version: '1.0'
+        url: '/Nas/ins.exe'
       }
     },
     version: '1.0.0'
@@ -361,8 +361,7 @@ export const apps: App[] = [
     ],
     downloads: {
       windows: {
-        url: '/WinPrinter.zip',
-        version: '1.0'
+        url: '/WinPrinter.zip'
       }
     },
     version: '1.0.0'
@@ -380,12 +379,10 @@ export const apps: App[] = [
     downloads: {
       macos: {
         intel: {
-          url: '/MacPrinter.zip',
-          version: '1.0'
+          url: '/MacPrinter.zip'
         },
         apple: {
-          url: '/MacPrinter.zip',
-          version: '1.0'
+          url: '/MacPrinter.zip'
         }
       }
     },
@@ -403,12 +400,29 @@ export const apps: App[] = [
     ],
     downloads: {
       windows: {
-        url: '/WinPrinter-1.zip',
-        version: '1.0'
+        url: '/WinPrinter-1.zip'
       }
     },
     version: '1.0.0'
   },
+  // PotPlayer
+  {
+    id: 'potplayer',
+    name: 'PotPlayer',
+    shortDescription: 'Windows 多媒体播放器',
+    category: 'entertainment',
+    icon: 'heroicons:play-solid',
+    features: [
+      '视频',
+      '音乐'
+    ],
+    downloads: {
+      windows: {
+        url: '/WinApp/PotPlayer.exe'
+      }
+    },
+    version: '1.0.0'
+  }
 ]
 
 export const getAppById = (id: string): App | undefined => {

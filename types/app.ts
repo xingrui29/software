@@ -2,7 +2,6 @@
 
 export interface DownloadInfo {
   url: string
-  version: string
 }
 
 export interface MacDownloads {
