@@ -8,31 +8,30 @@ VERSION=$(date +%Y%m%d%H%M%S)
 TAR_FILE="${IMAGE_NAME}-${VERSION}.tar.gz"
 
 echo "=========================================="
-echo "  软件分发系统 - 构建打包脚本"
+echo "  软件分发系统 - 打包脚本"
 echo "=========================================="
 echo "镜像名称: ${IMAGE_NAME}"
 echo "版本号: ${VERSION}"
 echo ""
 
-# 1. 安装依赖
-echo "[1/3] 安装依赖..."
-npm install
+echo "删除旧的打包文件..."
+rm -f ./${IMAGE_NAME}-*.tar.gz
 
-# 2. 编译项目
-echo "[2/3] 编译项目..."
-npm run build
-
-# 3. 打包部署文件
-echo "[3/3] 打包部署文件..."
+# 打包源代码（排除非必要文件）
+echo "[1/1] 打包源代码..."
 tar -czvf ${TAR_FILE} \
-    Dockerfile \
-    docker-compose.yml \
-    .output \
-    public
+    --exclude='node_modules' \
+    --exclude='.nuxt' \
+    --exclude='.output' \
+    --exclude='*.tar.gz' \
+    --exclude='.git' \
+    --exclude='.DS_Store' \
+    --exclude='._*' \
+    .
 
 echo ""
 echo "=========================================="
-echo "  构建打包完成!"
+echo "  打包完成!"
 echo "=========================================="
 echo "输出文件: ${TAR_FILE}"
 echo ""

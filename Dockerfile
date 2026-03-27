@@ -2,8 +2,9 @@ FROM node:20-alpine
 
 WORKDIR /app
 
-COPY .output .output
-COPY public public
+COPY . .
+
+RUN npm install && npm run build
 
 EXPOSE 3000
 

@@ -1,6 +1,5 @@
 /node_modules
 package-lock.json
 /.nuxt
-/.nuxt
-/.output
 *.tar.gz
+.DS_Store

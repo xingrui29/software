@@ -31,12 +31,12 @@ export const categories: Category[] = [
     icon: 'heroicons:wrench-screwdriver-solid',
     description: '系统工具和辅助软件'
   },
-  // {
-  //   id: 'media',
-  //   name: '影音娱乐',
-  //   icon: 'heroicons:play-circle-solid',
-  //   description: '媒体播放器和编辑器'
-  // },
+  {
+    id: 'media',
+    name: '影音娱乐',
+    icon: 'heroicons:play-circle-solid',
+    description: '媒体播放器和编辑器'
+  },
   {
     id: 'communication',
     name: '社交通讯',

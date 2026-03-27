@@ -410,7 +410,7 @@ export const apps: App[] = [
     id: 'potplayer',
     name: 'PotPlayer',
     shortDescription: 'Windows 多媒体播放器',
-    category: 'entertainment',
+    category: 'media',
     icon: 'heroicons:play-solid',
     features: [
       '视频',
